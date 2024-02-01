@@ -1,0 +1,184 @@
+using System;
+
+namespace Unity._04._01Toplama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int birinci = 35;
+            int ikinci = 34;
+
+            Console.WriteLine(birinci + ikinci + " " +"bir string");
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+
+
+
+using System;
+
+namespace Unity._04._01Toplama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int birinci = 35;
+            int ikinci = 34;
+
+            Console.WriteLine(birinci + "bir string" + ikinci+ 10);
+            Console.ReadLine();
+
+        }                        
+    }
+}              CEVAP: 35bir string3410
+
+
+
+
+
+
+using System;
+
+namespace Unity._04._01Toplama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int birinci = 35;
+            int ikinci = 34;
+
+            Console.WriteLine((birinci + 10) + "bir string" + ikinci + 10);
+            Console.ReadLine();
+
+        }
+    }                40bir string3410 //parantez içine aldığım taraf toplama işlemini yaptı parantez içinde birbirinin aynı olan değişkenler toplanır, çıkarılır vs.
+
+
+
+}
+
+
+
+04.02 BASİT 4 İŞLEM
+
+
+using System;
+
+namespace Unity._04._01Toplama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int toplama = 35 + 34;
+            int cikarma = 35 - 34;
+            int carpma = 35 * 34;
+            int bolme = 35 / 34;
+
+            Console.WriteLine("Toplam: " + toplama + "\nCikarma: " + cikarma + "\nCarpim: " + carpma + "\nBölme: " + bolme);
+            Console.ReadLine();
+
+        }
+                                 Toplam: 69
+                                 Cikarma: 1
+                                 Carpim: 1190
+                                 Bölme: 1
+
+    }
+
+
+
+
+
+
+namespace Unity._04._01Toplama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ilkSayi = 35;
+            int ikinciSayi = 34;
+            int toplama = 35 + 34;
+            int cikarma = 35 - 34;
+            int carpma = 35 * 34;
+            
+            float bolme = 35f / 34;
+            float bolmeIkıncı = (float)ilkSayi / ikinciSayi;
+
+            Console.WriteLine("Toplam: " + toplama + "\nCikarma: " + cikarma + "\nCarpim: " + carpma + "\nBölme: " + bolmeIkıncı);
+            Console.ReadLine();
+
+
+
+Toplam: 69
+Cikarma: 1
+Carpim: 1190
+Bölme: 1
+
+
+
+ bu run time yani sistem çalışırken yapacağımız bir şey // ilk sayi int ama bu sayıyı float'a çevirmek için basına (float) eklemek lazım.daha sonradan değiştirmek istiyorsam. 
+
+
+
+
+
+
+using System;
+
+namespace Unity._04._01Toplama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ilkSayi = 35;
+            int ikinciSayi = 34;
+            int toplama = 35 + 34;
+            int cikarma = 35 - 34;
+            int carpma = 35 * 34;
+            
+            float bolme = 35f / 34;
+            int mod = ilkSayi % ikinciSayi;
+            float bolmeIkıncı = (float) ilkSayi / ikinciSayi;
+
+            Console.WriteLine("Toplam: " + toplama + "\nCikarma: " + cikarma + "\nCarpim: " + carpma + "\nBölme: " + bolmeIkıncı + "\nMod: " + mod );
+            Console.ReadLine();
+
+        }        
+    }                 
+}
+
+
+mod alırken int olur cunku bolumden kaln hep tam sayıdır Burda da mol alıyoruz. Mod almak % işaretle gösterilir. Bölme işlemin de kalan demek. 
+
+
+işlem sırası: () parantezin içindekiler ilk olarak işlem sırası, power üster sayılar, ondan sonra çarpma ve bölme, çarpma ve bölmeyi hesaplerken soldan sağa doğru.
+
+ 
+
+
+
+
+
+OPERANDS: OPERANDSLARLA İŞLEMLER 
+
+int ucuncuSayi= ilkSayi + 5;
+ucuncuSayi+=10;   //ucuncuSayi=ucuncuSayi+10;
+
+
+
+
+
+
+
+
+
